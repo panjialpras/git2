@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: grey;
+                }
+                li {
+                float: left;
+                }
+
+                li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                }
+
+                li a:hover {
+                background-color: grey;
+                }
+    </style>
+    <body <body bgcolor="grey">
+        <ul>
+            <li><a class="active" href="angkringan.html">Beranda</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="book.html">Booking</a></li>
+          </ul>  
+    </body>
+    <body>
+        <form action="contact.php" method="POST">
+            <fieldset>
+            <legend>Booking tempat duduk angkringan</legend>
+            <p>
+                <label>Nama Lengkap</label>
+                <input type="text" name="name" placeholder="Masukkan nama lengkap anda" />
+            </p>
+            <p>
+                <label>Tanggal Booking :</label>
+                <input type="date" name="tanggal" />
+            </p>
+            <p>
+                <label>Jumlah Orang :</label>
+                <input type="number" min="1" max="10" name="jumlah" />
+            </p>
+            <p>
+                <label>Nomor Meja :</label>
+                <input type="number" min="1" max="13" name="nomor" />
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Send" />
+            </p>
+            </fieldset>
+        </form>
+    </body>
+</head>

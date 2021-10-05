@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="edit.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Account Setting</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Change first name.." required>
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Change last name.." required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Change phone number.." required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Change now">
+          <button onclick="myFunction()">Try it</button>
+          <script>
+            function myFunction() {
+              alert("Identity has been changed");
+            }
+            </script>
+        </div>
+  </div>
+  <p><a href="home.html">Home</a></p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\.."
+	},
+	{
+		"path": "C:\\xampp\\htdocs"
+	}
+],
+  "settings": {
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vscode-icons"
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- css eksternal -->
+    <link href="cobacss.css" rel="stylesheet" type="text/css">
+    <title>Forms</title>
+</head>
+<body>
+    <main>
+        <!-- judul formulir -->
+        <h1 id="title">Formulir Pendataan Mahasiswa</h1>
+        <div class="master-div-style">
+            <!-- deskripsi formulir -->
+            <p id="description">Silahkan isi formulir berikut sesuai dengan keadaan yang sebenarnya</p>
+            <!-- bagian isian formulir -->
+            <form id="survey-form" action="/do-something">
+                <!-- nama -->
+                <div class="form-rows">
+                    <div class="labels">
+                        <label for="name" id="name-label">Nama</label>
+                    </div>
+                    <div class="fields">
+                        <input type="text" id="name" class="input-fields" placeholder="Masukkan nama anda" required>
+                    </div>
+                </div>
+                <!-- email -->
+                <div class="form-rows">
+                    <div class="labels">
+                        <label for="email" id="email-label">Email</label>
+                    </div>
+                    <div class="fields">
+                        <input type="email" id="email" class="input-fields" placeholder="Masukkan alamat email" required>
+                    </div>
+                </div>
+                <!-- jumlah saudara -->
+                <div class="form-rows">
+                    <div class="labels">
+                        <label for="number" id="number-label">Jumlah saudara</label>
+                    </div>
+                    <div class="fields">
+                        <input type="number" id="number" class="input-fields" placeholder="Enter a number between 1 and 10" min="1" max="10">
+                    </div>
+                </div>
+                <!-- prodi -->
+                <div class="form-rows">
+                    <div class="labels">
+                        <label for="dropdown" id="dropdown-label">Program Studi</label>
+                    </div>
+                    <div class="fields">
+                        <select name="Location of positive event" id="dropdown" class="dropdown">
+                            <option value="informatika">Informatika</option>
+                            <option value="manajemen">Manajemen</option>
+                            <option value="akuntansi">Akuntansi</option>
+                            <option value="psikologi">Psikologi</option>
+                        <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- jenis kelamin -->
+                <div class="form-rows">
+                    <div class="labels">
+                        <label for="time-of-day">Jenis Kelamin</label>
+                    </div>
+                    <div class="fields">
+                        <ul id="time-of-day" style="list-style: none;">
+                            <li class="radio">
+                                <label>
+                                    Laki-laki
+                                    <input name="time-radio" type="radio" value="1" class="user-selection">
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    Perempuan
+                                    <input name="time-radio" type="radio" value="2" class="user-selection">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- hobi -->
+                <div class="form-rows">
+                    <div class="labels">
+                        <label for="feelings">
+                            Hobby anda
+                            <br>
+                            (Boleh lebih dari satu)
+                        </label>
+                    </div>
+                    <div class="fields">
+                        <ul id="feelings" style="list-style: none;">
+                            <li class="radio">
+                                <label>
+                                    <input name="feeling-check" value="1" type="checkbox" class="user-selection">
+                                    Bermain Bola
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    <input name="feeling-check" value="2" type="checkbox" class="user-selection">
+                                    Bermain Musik
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    <input name="feeling-check" value="3" type="checkbox" class="user-selection">
+                                    Berenang
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    <input name="feeling-check" value="4" type="checkbox" class="user-selection">
+                                    Badminton
+                                </label>
+                            </li>
+                            <li class="radio">
+                                <label>
+                                    <input name="feeling-check" value="5" type="checkbox" class="user-selection">
+                                    Bermain Game
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- harapan -->
+                <div class="form-rows">
+                    <div class="labels">
+                        <label for="event-details">
+                            Tuliskan harapan anda setelah lulus dari kuliah
+                        </label>
+                    </div>
+                    <div class="fields">
+                        <textarea id="event-details" class="input-fields" style="height: 50px;resize:vertical;font-family: Open Sans Condensed;" name="event-details" cols="1" rows="1" placeholder="Enter your experience here..."></textarea>
+                    </div>
+                </div>
+                <!-- button submit -->
+                <button class="button" id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

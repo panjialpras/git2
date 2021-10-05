@@ -1,0 +1,74 @@
+.header-part {
+    padding: 10px;
+  border: solid 5px none;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 5px;
+}
+
+.isi-menu {
+ padding: 20px;
+    border: solid 5px none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:fixed;
+    color: yellow;
+    
+    
+}
+
+.pquote {
+    float: right;
+    width: 200px;
+    color: wheat;
+    font-size: 26px;
+    line-height: 0.9;
+    font-style: italic;
+    padding: 5px;
+    border:solid 5px none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+.pquote p:first-letter {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.isi-tengah {
+    font-size: 30px;
+    color:yellow;
+    padding: 1px;
+    border: 5px none;
+    border-style:none;
+    border-left-width: 50px;
+    border-right-width: 50px;
+    border-top-width: 50px; 
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 0.5;
+    position:relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+.ps {
+    display: flex;
+    flex-wrap: wrap;
+}
+img {
+    align-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}

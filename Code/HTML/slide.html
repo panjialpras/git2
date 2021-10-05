@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>   
+        ul (
+            list-style-type : noone;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1
+        )
+        li a (
+            display : block;
+            color: #000 ;
+            padding: 8px 16px;
+            text-decoration: none;
+        )
+        li a:hover (
+            background-color: #555;
+            color: white
+        )
+    </style>
+</head>
+<body> <body bgcolor="#32a852">
+    <h2>Bar Navigasi Vertikal</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu1">Menu 1</a></li>
+        <li><a href="#menu2">Menu 2</a></li>
+        <li><a href="#menu3">Menu 3</a></li>
+    </ul>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {box-sizing:border-box}
+            body {font-family: Verdana,sams-serif; }
+            .mySlides {display:none}
+            .slideshow-container {
+                max-width: 100px;
+                position: relative;
+                margin: auto;
+            }
+            .text {
+                color: #f2f2f2 ;
+                font-size: 15px ;
+                padding: 8px 12px ;
+                position: absolute;
+                botton: 8px;
+                width: 100$
+                text-align: center ;
+            }
+            .numberText {
+                color: #f2f2f2 ;
+                font-size 12px ;
+                padding: 8px 12px ;
+                position: absolute ;
+                top : 0 ;
+            }
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: crimson;
+                border-radius: 50%;
+                display : inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .active {
+                background-color: firebrick;
+            }
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            @-webkit-keyframes fade{
+                from (opacity: .4;)
+                to (opacity: 1;)
+            }
+            @media only screen and (max-width: 300px) {
+                .text {font-size:  11px;}
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Praktek PWM</h2>
+        <p>CSS dan JS:</p>
+        <p><p style="text-align:left;"><font size="10px"><b>L</b></font></big>orem ipsum dolor sit amet, consectetur adipiscing elit, <font color=red>sed do</font>do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i><font color=blue> Ut enim</font></i>ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es <strike>laborum</strike></p>
+        <br><p><p style="text-align:right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <i>Ut enim</i>ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img_apel.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+                <div class="mySlides fade"></div>
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img_section19-s2.jpg" style="width:100%;">
+                    <div class="text">Caption Two</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img_section19-s55.jpg" style="width: 100%;">
+                <div class="text">Caption Three</div>
+            </div>
+            </div>
+        <div style="text-align:center;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        </div>
+            <script>
+                var slideIndex= 0;
+                showSlides () ;
+
+                function showSlides () {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides") ;
+                    var dots = document.getElementsByClassName("dot")
+                    for (i = 0; i < slide.length; i++) {
+                        slide [i].style.display = "none";
+                    }
+                    slideIndex++ ;
+                    if (slideIndex > slide.length) {slideIndex = 1}
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "") ;
+                    }
+                    slides[slideIndex-1].style.display = "block" ;
+                    dots[slideIndex-1].className += " active";
+                    setTimeout (showSlides, 2000); // ganti gambar setiap 2 detik
+                }
+            </script>
+    </body>
+</html>
+
+
+
+
+<!--Panji Al Muqsith Prasetyo
+    5299411248-->

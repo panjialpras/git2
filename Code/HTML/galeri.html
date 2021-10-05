@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style background: black;>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgb(0, 0, 0);
+                }
+                li {
+                float: left;
+                }
+
+                li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                }
+
+                li a:hover {
+                background-color: black;
+                }
+    </style>
+    <style>
+        h3 {
+                color: #f8a87a;
+                text-align: left;
+                font-family: Verdana;
+                text-transform: uppercase;
+                margin-top: 30px;
+            }
+    </style>
+    <body <body bgcolor="black">
+        <ul>
+            <li><a class="active" href="angkringan.html">Beranda</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="book.html">Booking</a></li>
+          </ul>          
+    </body>
+    <body >
+        <img class="mySlides" src="2-1-AngkringanKR-By-yerywahyudi.jpg" width="500" height="500">
+        <br>
+        <h3>Angkringan Pak Jabrik</h3>
+        <p text-align=left style="color: wheat;" style="font-family: serif;">Di Jalan Mangkubumi, ada Kantor Redaksi Harian Kedaulatan Rakyat yang sudah berusia puluhan tahun. Di depannya ada warung angkringan yang tidak kalah melegenda.</p>
+        <p text-align=left style="color: wheat;" style="font-style: normal;">Tidak sedikit yang menyebut Angkringan KR ini sebagai titik start yang tepat untuk memulai wisata kuliner di Jogja.</p>
+        <br>
+        <img class="mySlides" src="5-1-HouseOfRaminten-By-effikawaii.jpg" width="500" height="500">
+        <h3>House of Raminten</h3>
+        <p text-align=left style="color: wheat;" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Suasana yang ditawarkan House of Raminten cukup asyik dan tidak biasa, yaitu perpaduan tradisional Jawa, unsur modern tanpa meninggalkan gaya angkringan. Menu-menunya juga bisa cukup menarik untuk dipilih.</p>
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button
+    </body>
+    <script>
+         var slideIndex = 1;
+            showDivs(slideIndex);
+        
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            }
+        
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+            }
+    </script>
+</html>
